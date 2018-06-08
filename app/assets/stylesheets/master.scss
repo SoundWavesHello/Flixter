@@ -1,1 +1,19 @@
 @import 'bootstrap';
+@import url('https://fonts.googleapis.com/css?family=BioRhyme+Expanded|Inconsolata');
+
+
+h1, h2, h3, h4, h5{
+	font-family: 'Inconsolata', monospace;
+}
+
+.navbar{
+  background: image_url('navback.jpg');
+}
+
+.navbar .navbar-brand{
+	font-family: 'BioRhyme Expanded', serif;	
+}
+
+.navbar .nav-item .active .nav-link{
+	font-family: 'Inconsolata', monospace;
+}
