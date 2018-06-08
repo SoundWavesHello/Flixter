@@ -1,0 +1,31 @@
+@import url('https://fonts.googleapis.com/css?family=BioRhyme+Expanded|Inconsolata');
+
+html {
+  height: 100%;
+}
+
+body {
+  min-height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+#flex-content {
+  flex: 1;
+}
+
+#footer {
+  position: relative;
+  width: 100%;
+  min-height: 70px;
+  background: image_url('navback.jpg');
+  font-family: 'Inconsolata', monospace;
+  margin-top: 25px;
+  padding-left: 30px;
+  padding-right: 30px;
+}
+
+#footer a{
+	color: black;
+	font-weight: 100;
+}
