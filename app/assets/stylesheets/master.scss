@@ -17,3 +17,21 @@ h1, h2, h3, h4, h5{
 .navbar .nav-item .active .nav-link{
 	font-family: 'Inconsolata', monospace;
 }
+
+.hero{
+	background: image_url('hero2.jpg');
+	height: 600px;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+  	-o-background-size: cover;
+	background-size: cover;	
+}
+
+.frosty{
+	background: rgba(0, 0, 0, 0.1);
+	color: white;
+	text-align: center;
+	margin-left: auto;
+	margin-right: auto;
+	width: 40%;
+}
