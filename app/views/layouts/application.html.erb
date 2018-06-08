@@ -9,8 +9,7 @@
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
   </head>
 
-  <body>
-    <div id="flex-content">  
+  <body> 
       <nav class="navbar navbar-toggleable-md navbar-light bg-faded">
         <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
@@ -44,15 +43,8 @@
       <% if alert.present? %>
         <p class="alert basic-box"><%= alert %></p>
       <% end %>
-    </div>
     
     <!--Stuff in the actual page-->
     <%= yield %>
-
-    <div id="footer">
-      <div class="footer-container">
-        <%= link_to 'About the creator', '#' %>
-      </div>
-    </div>
   </body>
 </html>
