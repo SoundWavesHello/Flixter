@@ -1,0 +1,24 @@
+<br />
+<div class="container-offset">
+	<div class="basic-box">
+	  <h1 class="text-center">Learn something today</h1>
+	  <hr />
+
+	  <% @courses.each do |course| %>
+	    <h2 class="text-center"><%= course.title %></h2>
+	    <br/>
+	    <div class="row">
+		    <div class="col-sm-8 col-12">
+		      <%= course.description %>
+		    </div>
+		    <div class="col-sm-4 col-12 text-center">
+		      <%= link_to 'Go to course', '#', class: 'btn btn-primary btn-large' %>
+		    </div>
+	    </div>
+	    <div class="clr"></div>
+	    <hr />
+	    <br />
+	    <br />
+	  <% end %>
+	</div>
+</div>
