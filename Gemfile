@@ -72,5 +72,10 @@ source 'https://rails-assets.org' do
   gem 'rails-assets-tether', '>= 1.3.3'
 end
 
+# Adding forms
+gem 'simple_form'
+
+# Adding users
+gem 'devise'
 
 

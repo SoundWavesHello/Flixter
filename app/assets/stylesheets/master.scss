@@ -12,14 +12,21 @@ body{
 
 .navbar{
   	background: image_url('navback.jpg');
+  	margin-bottom: 0px;
 }
 
 .navbar .navbar-brand{
-	font-family: 'BioRhyme Expanded', serif;	
+	font-family: 'BioRhyme Expanded', serif;
+	font-size: 25px;	
 }
 
 .navbar .nav-item .active .nav-link{
 	font-family: 'Inconsolata', monospace;
+}
+
+.navbar .nav-link{
+	font-family: 'Inconsolata', monospace;
+	color: black;
 }
 
 .hero{
