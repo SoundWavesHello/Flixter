@@ -1,0 +1,21 @@
+<br />
+<div class="container-offset">
+	<div class="basic-box text-center">
+		<h1><%= @course.title %></h1>
+
+		<div>
+			<h2><%= number_to_currency @course.cost %></h2>
+		</div>
+
+		<% if current_user && current_user == @course.user %>
+			<br/>
+			<br/>
+			<%= link_to 'Administrator', instructor_course_path(@course), class: 'btn btn-danger btn-large'%>
+		<% end %>
+
+		<div>
+			<%= @course.description %>
+		</div>
+
+	</div>
+</div>
