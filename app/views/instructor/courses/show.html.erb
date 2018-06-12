@@ -5,15 +5,23 @@
 	<div class="text-center">
 		<h2><%= link_to 'Student view', course_path(@course)%></h2>
 		<div class='clr'/>
-    	<h2><%= link_to 'Add a new section', new_instructor_course_section_path(@course) %></h2>
   	</div>
   	<br />
 
   	<h2 class="text-center">Sections</h2>
   	<hr />
   	<% @course.sections.each do |section| %>
-  		<h3><%= section.title %></h3>
+  		<u><h3><%= section.title %></h3></u>
+      <% section.lessons.each do |lesson| %>
+        <h4><%= lesson.title %></h4>
+        <p><%= lesson.subtitle %></p>
+      <% end %>
+      <%= link_to 'New lesson', new_instructor_section_lesson_path(section)%>
   		<hr />
 
   	<% end %>
+
+    <br/>
+
+    <h2><%= link_to 'Add a new section', new_instructor_course_section_path(@course) %></h2>
 </div>

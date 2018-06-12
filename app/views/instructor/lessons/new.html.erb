@@ -1,0 +1,13 @@
+<br />
+
+<div class="container-offset basic-box">
+	<h1>Add a new lesson</h1>
+	<%= simple_form_for @lesson, url: instructor_section_lessons_path(@section) do |f| %>
+    	<%= f.input :title %>
+    	<%= f.input :subtitle %>
+    	<br />
+    	<%= f.submit "Create", class: 'btn btn-primary' %>
+    	<br />
+  	<% end %>
+  	<br />
+</div>
