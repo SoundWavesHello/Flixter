@@ -8,8 +8,6 @@
 		</div>
 
 		<% if current_user && current_user == @course.user %>
-			<br/>
-			<br/>
 			<%= link_to 'Administrator', instructor_course_path(@course), class: 'btn btn-danger btn-large'%>
 		<% end %>
 
