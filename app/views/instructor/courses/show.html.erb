@@ -1,3 +1,19 @@
-<div class="basic-box">
-  <h1 class="text-center"><%= @course.title %></h1>
+<br/>
+
+<div class="container-offset basic-box">
+	<h1 class="text-center"><%= @course.title %></h1>
+	<div class="text-center">
+		<h2><%= link_to 'Student view', course_path(@course)%></h2>
+		<div class='clr'/>
+    	<h2><%= link_to 'Add a new section', new_instructor_course_section_path(@course) %></h2>
+  	</div>
+  	<br />
+
+  	<h2 class="text-center">Sections</h2>
+  	<hr />
+  	<% @course.sections.each do |section| %>
+  		<h3><%= section.title %></h3>
+  		<hr />
+
+  	<% end %>
 </div>
